@@ -1,0 +1,84 @@
+.diaglog {
+    width: 300px;
+    height: 150px;
+    background: rgb(248, 248, 248);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: dialog 1.5s;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.diaglog > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-label-sign {
+    height: 60%;
+    width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+}
+.diaglog > form > .submit-user {
+    height: 40%;
+    display: flex;
+}
+
+#user-sign {
+    width: 270px;
+    height: 40px;
+    font-size: 20px;
+    border: solid rgb(221, 223, 226) 2px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding-left: 5px;
+}
+#user-sign:focus {
+    border: solid rgb(136, 64, 230) 2px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.submit-user > button {
+    width: 270px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgb(105, 12, 139);
+    color: white;
+    font-size: 22px;
+}
+.submit-user > button:hover {
+    background: rgb(91, 25, 116);
+}
+.submit-user > button:active {
+    background: rgb(78, 2, 105);
+}
+
+#close-diaglog {
+    font-size: 20px;
+    color: rgb(75, 0, 103);
+}
+.close-icon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+/* animation for diaglog */
+
+@keyframes dialog {
+    0% {
+        top: 47%;
+        opacity: 0;
+    }
+    100% {
+        top: 40%;
+        opacity: 1;
+    }
+}

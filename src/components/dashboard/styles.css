@@ -1,0 +1,134 @@
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(211, 211, 211);
+}
+.dashboard-wrapper {
+    display: flex;
+    width: 100%;
+}
+.dashboard-container {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    margin: 50px auto 50px auto;
+    min-width: 100%;
+    padding-left: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(138, 138, 138);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(129, 129, 129);
+    transition: all 0.4s;
+}
+
+.main {
+    border-top: solid 2px rgb(98, 10, 130);
+    min-width: 200px;
+    width: 30%;
+    max-width: 380px;
+    background: white;
+    box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.side {
+    border-top: solid 2px rgb(98, 10, 130);
+    display: flex;
+    overflow-x: auto;
+    background: whitesmoke;
+}
+.content {
+    min-width: 300px;
+    width: 20%;
+    height: 100%;
+}
+.row {
+    text-align: center;
+    height: 70px;
+    display: flex;
+    border-bottom: solid 1px rgb(104, 64, 118);
+}
+.row-name {
+    margin: 0;
+}
+.row > span {
+    margin: auto;
+}
+
+.top-title {
+    width: 100%;
+    height: 70px;
+    color: rgb(104, 64, 118);
+    text-align: center;
+}
+.top-title > h3 {
+    font-size: 23px;
+    overflow-x: auto;
+}
+.article-content {
+    height: auto;
+}
+.article-button {
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+.article-button:active {
+    box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
+}
+.yes-button {
+    border: solid 3px rgb(130, 190, 1);
+    color: rgb(130, 190, 1);
+}
+.no-button {
+    border: solid 3px rgb(255, 108, 108);
+    color: rgb(255, 108, 108);
+}
+
+.actual-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: rgb(83, 37, 99);
+    color: white;
+    border-radius: 50%;
+    outline: none;
+}
+.actual-button:active {
+    box-shadow: inset 0px 0px 7px 2px rgba(255, 255, 255, 0.5);
+}
+.actual-button > span {
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+}
+.actual-number {
+    width: 50px !important;
+    margin: auto 10px;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 10px;
+}
+.actual-number::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.body-name {
+    margin-top: 3px;
+}
+.button-question {
+    width: 70%;
+    max-width: 180px;
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: space-around;
+}
